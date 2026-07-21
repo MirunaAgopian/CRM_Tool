@@ -17,7 +17,7 @@
 }
 
 mat-toolbar-row {
-  background-color: lightblue;
+  background-color: #d7e3ff;
 }
 
 mat-toolbar,
@@ -49,4 +49,8 @@ mat-toolbar-row {
       background-color: rgba(0, 0, 0, 0.1);
     }
   }
+}
+
+.router-container {
+    padding: 16px;
 }

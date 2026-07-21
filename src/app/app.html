@@ -4,21 +4,25 @@
       <p>Logo comes here</p>
     </div>
     <ul class="menu-items">
-      <li><mat-icon>fact_check</mat-icon>Dashboard</li>
-      <li><mat-icon>perm_identity</mat-icon>User</li>
+      <li [routerLink]="['/dashboard']"><mat-icon>fact_check</mat-icon>Dashboard</li>
+      <li [routerLink]="['/user']"><mat-icon>perm_identity</mat-icon>User</li>
     </ul>
   </mat-drawer>
 
   <div class="example-sidenav-content">
     <mat-toolbar>
       <mat-toolbar-row>
-        <button matIconButton (click)="drawer.toggle()" class="menu-icon" aria-label="Example icon-button with menu icon">
+        <button
+          matIconButton
+          (click)="drawer.toggle()"
+          class="menu-icon"
+          aria-label="Example icon-button with menu icon"
+        >
           <mat-icon>menu</mat-icon>
         </button>
         <span>Simple CRM</span>
       </mat-toolbar-row>
     </mat-toolbar>
   </div>
+  <div class="router-container"><router-outlet /></div>
 </mat-drawer-container>
-
-<router-outlet />
