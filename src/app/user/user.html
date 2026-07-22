@@ -1,4 +1,24 @@
-<p>user works!</p>
-<button (click)="openDialog()" class="add-user-fab" matTooltip="Add user" [matTooltipPosition]="'above'" matFab aria-label="Example icon button with a delete icon">
+<mat-card>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>City</th>
+      <th>Birth date</th>
+    </tr>
+    <tr>
+      <td>Miruna Agopian</td>
+      <td>Mannheim</td>
+      <td>19.11.1997</td>
+    </tr>
+  </table>
+</mat-card>
+<button
+  (click)="openDialog()"
+  class="add-user-fab"
+  matTooltip="Add user"
+  [matTooltipPosition]="'above'"
+  matFab
+  aria-label="Example icon button with a delete icon"
+>
   <mat-icon>add</mat-icon>
 </button>

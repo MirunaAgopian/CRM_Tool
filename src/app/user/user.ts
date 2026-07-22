@@ -7,10 +7,18 @@ import { DialogAddUser } from '../dialog-add-user/dialog-add-user';
 import { MatNativeDateModule } from '@angular/material/core';
 import { UserModel } from '../../models/user.class';
 import { Firestore } from '@angular/fire/firestore';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-user',
-  imports: [MatIconModule, MatButtonModule, MatTooltipModule, MatDialogModule, MatNativeDateModule],
+  imports: [
+    MatIconModule,
+    MatButtonModule,
+    MatTooltipModule,
+    MatDialogModule,
+    MatNativeDateModule,
+    MatCardModule,
+  ],
   templateUrl: './user.html',
   styleUrl: './user.scss',
 })
