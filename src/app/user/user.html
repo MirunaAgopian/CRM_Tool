@@ -5,11 +5,13 @@
       <th>City</th>
       <th>Birth date</th>
     </tr>
-    <tr>
-      <td>Miruna Agopian</td>
-      <td>Mannheim</td>
-      <td>19.11.1997</td>
-    </tr>
+    @for (u of allUsers; track u.id) {
+      <tr [routerLink]="'/user/' + u.id">
+        <td>{{ u.firstName }} {{ u.lastName }}</td>
+        <td>{{u.city}}</td>
+        <td>{{u.birthDate}}</td>
+      </tr>
+    }
   </table>
 </mat-card>
 <button
